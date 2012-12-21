@@ -7,14 +7,29 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 
-group :development, :test do
-  gem 'rspec'
-  gem 'rspec-rails'
-  gem 'autotest'
-  gem 'autotest-standalone'
+#group :development, :test do
+#  gem 'rspec'
+#  gem 'rspec-rails'
+#  gem 'autotest'
+#  gem 'autotest-standalone'
+#end
+
+#group :development do
+#   gem 'rspec-rails', '2.0.1'
+#end
+
+#group :test do
+#   gem 'rspec', '2.0.1'
+#   gem 'webrat', '0.7.1'
+#end
+
+group :test, :development do
+  gem "rspec-rails", "~> 2.4"
 end
 
-
+group :test do
+   gem 'webrat', '0.7.1'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
