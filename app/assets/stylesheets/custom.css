@@ -1,0 +1,31 @@
+footer {
+         text-align: center;
+         margin-top: 10px;
+         width: 710px;
+         margin-left: auto;
+         margin-right: auto;
+}
+
+footer nav {
+         float: none;
+         
+}
+
+footer ul {
+
+       background-color: #cdc9c9;
+       list-style-type:none;
+       text-color: green;
+       text-decoration: none;
+       padding: 10px;
+} 
+
+footer ul li { 
+        display: inline;
+        
+}
+
+footer a:link {
+     text-decoration: none;
+     padding: 20px;
+}
