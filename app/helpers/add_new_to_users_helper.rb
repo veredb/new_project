@@ -1,0 +1,2 @@
+module AddNewToUsersHelper
+end
