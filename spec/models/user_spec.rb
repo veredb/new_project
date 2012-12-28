@@ -91,8 +91,15 @@ describe User do
        end
    end
    describe "has_password? method" do
-       before(:each) do
+        before(:each) do
            @user = User.create!(@attr)
-       end
+        end
+        it "should be true if the passwords match" do
+            @user.has_password?(@attr[:password]).should be_true
+        end
+        
+        it "should be false if the passwords don't match" do
+            @user.has_password?("invalid").should be_false
+        end
    end
 end
