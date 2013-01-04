@@ -1,8 +1,9 @@
 <header>
-   <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+   <%= link_to logo, root_path %>
+<!--   <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %> -->
    <nav class="round">
      <ul>
-       <li><%= link_to "Home", pages_home_path %></li>
+       <li><%= link_to "Home", root_path %></li>
        <li><%= link_to "Sign up", signup_path %></li>
        <% if signed_in? %>
        <li><%= link_to "Profile", current_user %></li>
