@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'gravatar_image_tag', '0.1.0'
+gem 'will_paginate'
 #group :development, :test do
 #  gem 'rspec'
 #  gem 'rspec-rails'
@@ -14,9 +15,9 @@ gem 'gravatar_image_tag', '0.1.0'
 #  gem 'autotest-standalone'
 #end
 
-#group :development do
-#   gem 'rspec-rails', '2.0.1'
-#end
+group :development do
+    gem 'faker', '0.3.1'
+end
 
 #group :test do
 #   gem 'rspec', '2.0.1'
