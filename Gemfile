@@ -20,7 +20,7 @@ gem 'will_paginate'
 #end
 
 group :development do
-    gem 'faker', '0.3.1'
+    gem 'faker', '0.3.1', :require => false
 end
 
 #group :test do
