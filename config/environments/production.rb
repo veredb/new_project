@@ -13,7 +13,7 @@ NewProject::Application.configure do
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
-
+  config.assets.precompile += %w( blueprint/screen.css blueprint/print.css )
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
 
