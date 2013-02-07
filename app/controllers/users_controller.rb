@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   before_filter :authenticate, :only => [:index, :edit, :update]
   before_filter :correct_user, :only => [:edit, :update]
+#this is a test
+
 
   def index
      @title = "All users"
